@@ -1,0 +1,6 @@
+framework module GeeGlanceSDK {
+  umbrella header "GeeGlanceSDK.h"
+
+  export *
+  module * { export * }
+}

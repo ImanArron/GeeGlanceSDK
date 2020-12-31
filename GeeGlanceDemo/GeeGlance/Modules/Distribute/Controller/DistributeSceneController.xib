@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DistributeSceneController">
+            <connections>
+                <outlet property="backButton" destination="DUE-Un-AjF" id="8q2-f9-i7Q"/>
+                <outlet property="distributeButton" destination="Twv-mZ-lNa" id="S9x-5g-qR5"/>
+                <outlet property="editTextView" destination="g5X-bG-Sqz" id="Kfa-3K-0qn"/>
+                <outlet property="navigationView" destination="wMR-fh-YXe" id="dnE-go-U8G"/>
+                <outlet property="textViewHeightConstraint" destination="3o8-7w-m4G" id="0cO-a3-sMR"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wMR-fh-YXe">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DUE-Un-AjF" customClass="GlanceButton">
+                            <rect key="frame" x="16" y="10.5" width="30" height="29"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="返回">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="backAction:" destination="-1" eventType="touchUpInside" id="Q28-DD-a3K"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Twv-mZ-lNa" customClass="GlanceButton">
+                            <rect key="frame" x="368" y="10.5" width="30" height="29"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="发布">
+                                <color key="titleColor" red="0.29411764705882354" green="0.41568627450980389" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="distributeAction:" destination="-1" eventType="touchUpInside" id="PCc-SU-5fU"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Twv-mZ-lNa" firstAttribute="centerY" secondItem="wMR-fh-YXe" secondAttribute="centerY" id="2gC-jt-Bih"/>
+                        <constraint firstAttribute="height" constant="50" id="hAg-E9-xCs"/>
+                        <constraint firstItem="DUE-Un-AjF" firstAttribute="centerY" secondItem="wMR-fh-YXe" secondAttribute="centerY" id="uaH-Nh-ECo"/>
+                        <constraint firstAttribute="trailing" secondItem="Twv-mZ-lNa" secondAttribute="trailing" constant="16" id="xi5-Xv-uxF"/>
+                        <constraint firstItem="DUE-Un-AjF" firstAttribute="leading" secondItem="wMR-fh-YXe" secondAttribute="leading" constant="16" id="y7B-nU-Koe"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g5X-bG-Sqz" customClass="GeeGlanceTextView">
+                    <rect key="frame" x="16" y="66" width="382" height="345"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="345" id="3o8-7w-m4G"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="wMR-fh-YXe" secondAttribute="trailing" id="7JV-fA-4Ey"/>
+                <constraint firstItem="g5X-bG-Sqz" firstAttribute="top" secondItem="wMR-fh-YXe" secondAttribute="bottom" constant="16" id="8QP-25-C45"/>
+                <constraint firstItem="wMR-fh-YXe" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="IxW-px-qib"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="g5X-bG-Sqz" secondAttribute="trailing" constant="16" id="M5Q-o1-NRV"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="top" secondItem="wMR-fh-YXe" secondAttribute="top" id="T7N-5b-dGp"/>
+                <constraint firstItem="g5X-bG-Sqz" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="16" id="uwQ-dZ-kws"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="137.68115942028987" y="129.91071428571428"/>
+        </view>
+    </objects>
+</document>

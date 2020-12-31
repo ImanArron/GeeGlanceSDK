@@ -1,0 +1,740 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E953E680259C799D00CE69D0 /* GeeGlanceSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9B35E76256F5306005319DD /* GeeGlanceSDK.framework */; };
+		E9B35E2F256F5215005319DD /* GlanceButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B35DF0256F5215005319DD /* GlanceButton.m */; };
+		E9B35E30256F5215005319DD /* GlanceSubmitConfirmWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B35DF1256F5215005319DD /* GlanceSubmitConfirmWindow.m */; };
+		E9B35E33256F5215005319DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9B35DF9256F5215005319DD /* Assets.xcassets */; };
+		E9B35E34256F5215005319DD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B35DFA256F5215005319DD /* ViewController.m */; };
+		E9B35E35256F5215005319DD /* ColorUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B35DFD256F5215005319DD /* ColorUtil.m */; };
+		E9B35E36256F5215005319DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9B35DFE256F5215005319DD /* LaunchScreen.storyboard */; };
+		E9B35E37256F5215005319DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9B35E00256F5215005319DD /* Main.storyboard */; };
+		E9B35E38256F5215005319DD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B35E02256F5215005319DD /* main.m */; };
+		E9B35E3A256F5215005319DD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B35E05256F5215005319DD /* AppDelegate.m */; };
+		E9B35E3B256F5215005319DD /* BilibiliSceneController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B35E09256F5215005319DD /* BilibiliSceneController.m */; };
+		E9B35E3C256F5215005319DD /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B35E0A256F5215005319DD /* WebViewController.m */; };
+		E9B35E3D256F5215005319DD /* BilibiliSceneController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9B35E0B256F5215005319DD /* BilibiliSceneController.xib */; };
+		E9B35E3E256F5215005319DD /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9B35E0C256F5215005319DD /* WebViewController.xib */; };
+		E9B35E3F256F5215005319DD /* BilibiliCommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9B35E11256F5215005319DD /* BilibiliCommentCell.xib */; };
+		E9B35E40256F5215005319DD /* BilibiliCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B35E12256F5215005319DD /* BilibiliCommentCell.m */; };
+		E9B35E41256F5215005319DD /* CommentSceneController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9B35E15256F5215005319DD /* CommentSceneController.xib */; };
+		E9B35E42256F5215005319DD /* CommentSceneController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B35E17256F5215005319DD /* CommentSceneController.m */; };
+		E9B35E43256F5215005319DD /* DistributeCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B35E19256F5215005319DD /* DistributeCommentCell.m */; };
+		E9B35E44256F5215005319DD /* DistributeCommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9B35E1B256F5215005319DD /* DistributeCommentCell.xib */; };
+		E9B35E45256F5215005319DD /* GTProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B35E1E256F5215005319DD /* GTProgressHUD.m */; };
+		E9B35E46256F5215005319DD /* DistributeSceneController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B35E21256F5215005319DD /* DistributeSceneController.m */; };
+		E9B35E47256F5215005319DD /* DistributeSceneController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9B35E22256F5215005319DD /* DistributeSceneController.xib */; };
+		E9B35E48256F5215005319DD /* CustomSceneController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9B35E26256F5215005319DD /* CustomSceneController.xib */; };
+		E9B35E49256F5215005319DD /* CustomSceneController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B35E27256F5215005319DD /* CustomSceneController.m */; };
+		E9B35E4A256F5215005319DD /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B35E2B256F5215005319DD /* BaseViewController.m */; };
+		E9B35E6A256F52C0005319DD /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B35E4F256F52C0005319DD /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		E9B35E6B256F52C0005319DD /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B35E58256F52C0005319DD /* ViewController+MASAdditions.m */; };
+		E9B35E6C256F52C0005319DD /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B35E5C256F52C0005319DD /* MASCompositeConstraint.m */; };
+		E9B35E6D256F52C0005319DD /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B35E5D256F52C0005319DD /* MASConstraintMaker.m */; };
+		E9B35E6E256F52C0005319DD /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B35E5E256F52C0005319DD /* MASLayoutConstraint.m */; };
+		E9B35E6F256F52C0005319DD /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B35E5F256F52C0005319DD /* NSArray+MASAdditions.m */; };
+		E9B35E70256F52C0005319DD /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B35E60256F52C0005319DD /* View+MASAdditions.m */; };
+		E9B35E71256F52C0005319DD /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B35E63256F52C0005319DD /* MASConstraint.m */; };
+		E9B35E72256F52C0005319DD /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B35E65256F52C0005319DD /* MASViewConstraint.m */; };
+		E9B35E73256F52C0005319DD /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B35E66256F52C0005319DD /* MASViewAttribute.m */; };
+		E9B35E74256F52C0005319DD /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B35E68256F52C0005319DD /* MBProgressHUD.m */; };
+		E9B35E77256F5306005319DD /* GeeGlanceResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E9B35E75256F5306005319DD /* GeeGlanceResource.bundle */; };
+		E9B35E7A256F5327005319DD /* libiconv.2.4.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E9B35E79256F5327005319DD /* libiconv.2.4.0.tbd */; };
+		E9E94BD624F8E215001768F5 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E94BD524F8E215001768F5 /* MediaPlayer.framework */; };
+		E9E94BD824F8E236001768F5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E94BD724F8E236001768F5 /* AVFoundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DF1286E6728859EF8FA40C1A /* libPods-GeeGlanceDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GeeGlanceDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9B35DF0256F5215005319DD /* GlanceButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlanceButton.m; sourceTree = "<group>"; };
+		E9B35DF1256F5215005319DD /* GlanceSubmitConfirmWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlanceSubmitConfirmWindow.m; sourceTree = "<group>"; };
+		E9B35DF2256F5215005319DD /* GlanceButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlanceButton.h; sourceTree = "<group>"; };
+		E9B35DF3256F5215005319DD /* GlanceSubmitConfirmWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlanceSubmitConfirmWindow.h; sourceTree = "<group>"; };
+		E9B35DF4256F5215005319DD /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E9B35DF9256F5215005319DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E9B35DFA256F5215005319DD /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E9B35DFC256F5215005319DD /* ColorUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorUtil.h; sourceTree = "<group>"; };
+		E9B35DFD256F5215005319DD /* ColorUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorUtil.m; sourceTree = "<group>"; };
+		E9B35DFF256F5215005319DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E9B35E01256F5215005319DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E9B35E02256F5215005319DD /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E9B35E05256F5215005319DD /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E9B35E09256F5215005319DD /* BilibiliSceneController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BilibiliSceneController.m; sourceTree = "<group>"; };
+		E9B35E0A256F5215005319DD /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		E9B35E0B256F5215005319DD /* BilibiliSceneController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BilibiliSceneController.xib; sourceTree = "<group>"; };
+		E9B35E0C256F5215005319DD /* WebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewController.xib; sourceTree = "<group>"; };
+		E9B35E0D256F5215005319DD /* BilibiliSceneController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BilibiliSceneController.h; sourceTree = "<group>"; };
+		E9B35E0E256F5215005319DD /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		E9B35E10256F5215005319DD /* BilibiliCommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BilibiliCommentCell.h; sourceTree = "<group>"; };
+		E9B35E11256F5215005319DD /* BilibiliCommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BilibiliCommentCell.xib; sourceTree = "<group>"; };
+		E9B35E12256F5215005319DD /* BilibiliCommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BilibiliCommentCell.m; sourceTree = "<group>"; };
+		E9B35E15256F5215005319DD /* CommentSceneController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentSceneController.xib; sourceTree = "<group>"; };
+		E9B35E16256F5215005319DD /* CommentSceneController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentSceneController.h; sourceTree = "<group>"; };
+		E9B35E17256F5215005319DD /* CommentSceneController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentSceneController.m; sourceTree = "<group>"; };
+		E9B35E19256F5215005319DD /* DistributeCommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DistributeCommentCell.m; sourceTree = "<group>"; };
+		E9B35E1A256F5215005319DD /* DistributeCommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DistributeCommentCell.h; sourceTree = "<group>"; };
+		E9B35E1B256F5215005319DD /* DistributeCommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DistributeCommentCell.xib; sourceTree = "<group>"; };
+		E9B35E1D256F5215005319DD /* GTProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTProgressHUD.h; sourceTree = "<group>"; };
+		E9B35E1E256F5215005319DD /* GTProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTProgressHUD.m; sourceTree = "<group>"; };
+		E9B35E21256F5215005319DD /* DistributeSceneController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DistributeSceneController.m; sourceTree = "<group>"; };
+		E9B35E22256F5215005319DD /* DistributeSceneController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DistributeSceneController.xib; sourceTree = "<group>"; };
+		E9B35E23256F5215005319DD /* DistributeSceneController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DistributeSceneController.h; sourceTree = "<group>"; };
+		E9B35E26256F5215005319DD /* CustomSceneController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomSceneController.xib; sourceTree = "<group>"; };
+		E9B35E27256F5215005319DD /* CustomSceneController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomSceneController.m; sourceTree = "<group>"; };
+		E9B35E28256F5215005319DD /* CustomSceneController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomSceneController.h; sourceTree = "<group>"; };
+		E9B35E2B256F5215005319DD /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		E9B35E2C256F5215005319DD /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		E9B35E2D256F5215005319DD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9B35E2E256F5215005319DD /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E9B35E4E256F52C0005319DD /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
+		E9B35E4F256F52C0005319DD /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		E9B35E50256F52C0005319DD /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
+		E9B35E51256F52C0005319DD /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
+		E9B35E52256F52C0005319DD /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		E9B35E53256F52C0005319DD /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
+		E9B35E54256F52C0005319DD /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
+		E9B35E55256F52C0005319DD /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		E9B35E56256F52C0005319DD /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
+		E9B35E57256F52C0005319DD /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
+		E9B35E58256F52C0005319DD /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		E9B35E59256F52C0005319DD /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
+		E9B35E5A256F52C0005319DD /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
+		E9B35E5B256F52C0005319DD /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		E9B35E5C256F52C0005319DD /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
+		E9B35E5D256F52C0005319DD /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
+		E9B35E5E256F52C0005319DD /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
+		E9B35E5F256F52C0005319DD /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		E9B35E60256F52C0005319DD /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
+		E9B35E61256F52C0005319DD /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		E9B35E62256F52C0005319DD /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
+		E9B35E63256F52C0005319DD /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
+		E9B35E64256F52C0005319DD /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		E9B35E65256F52C0005319DD /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
+		E9B35E66256F52C0005319DD /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
+		E9B35E68256F52C0005319DD /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		E9B35E69256F52C0005319DD /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		E9B35E75256F5306005319DD /* GeeGlanceResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GeeGlanceResource.bundle; path = ../SDK/GeeGlanceResource.bundle; sourceTree = "<group>"; };
+		E9B35E76256F5306005319DD /* GeeGlanceSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GeeGlanceSDK.framework; path = ../SDK/GeeGlanceSDK.framework; sourceTree = "<group>"; };
+		E9B35E79256F5327005319DD /* libiconv.2.4.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.2.4.0.tbd; path = usr/lib/libiconv.2.4.0.tbd; sourceTree = SDKROOT; };
+		E9E94B9B24F7557C001768F5 /* 先鉴.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "先鉴.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9E94BD524F8E215001768F5 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		E9E94BD724F8E236001768F5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E9E94B9824F7557C001768F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9B35E7A256F5327005319DD /* libiconv.2.4.0.tbd in Frameworks */,
+				E9E94BD824F8E236001768F5 /* AVFoundation.framework in Frameworks */,
+				E9E94BD624F8E215001768F5 /* MediaPlayer.framework in Frameworks */,
+				E953E680259C799D00CE69D0 /* GeeGlanceSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6F299648E06D13A6E3762A4B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E9B35E79256F5327005319DD /* libiconv.2.4.0.tbd */,
+				E9B35E75256F5306005319DD /* GeeGlanceResource.bundle */,
+				E9B35E76256F5306005319DD /* GeeGlanceSDK.framework */,
+				E9E94BD724F8E236001768F5 /* AVFoundation.framework */,
+				E9E94BD524F8E215001768F5 /* MediaPlayer.framework */,
+				DF1286E6728859EF8FA40C1A /* libPods-GeeGlanceDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E9B35DEE256F5215005319DD /* GeeGlance */ = {
+			isa = PBXGroup;
+			children = (
+				E9B35DEF256F5215005319DD /* GlanceUIComponents */,
+				E9B35E06256F5215005319DD /* Modules */,
+				E9B35DFB256F5215005319DD /* Utils */,
+				E9B35E4C256F52C0005319DD /* ThirdLibrary */,
+				E9B35E2E256F5215005319DD /* ViewController.h */,
+				E9B35DFA256F5215005319DD /* ViewController.m */,
+				E9B35DF4256F5215005319DD /* AppDelegate.h */,
+				E9B35E05256F5215005319DD /* AppDelegate.m */,
+				E9B35E02256F5215005319DD /* main.m */,
+				E9B35DF9256F5215005319DD /* Assets.xcassets */,
+				E9B35E2D256F5215005319DD /* Info.plist */,
+				E9B35DFE256F5215005319DD /* LaunchScreen.storyboard */,
+				E9B35E00256F5215005319DD /* Main.storyboard */,
+			);
+			path = GeeGlance;
+			sourceTree = "<group>";
+		};
+		E9B35DEF256F5215005319DD /* GlanceUIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				E9B35DF2256F5215005319DD /* GlanceButton.h */,
+				E9B35DF0256F5215005319DD /* GlanceButton.m */,
+				E9B35DF3256F5215005319DD /* GlanceSubmitConfirmWindow.h */,
+				E9B35DF1256F5215005319DD /* GlanceSubmitConfirmWindow.m */,
+			);
+			path = GlanceUIComponents;
+			sourceTree = "<group>";
+		};
+		E9B35DFB256F5215005319DD /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E9B35DFC256F5215005319DD /* ColorUtil.h */,
+				E9B35DFD256F5215005319DD /* ColorUtil.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		E9B35E06256F5215005319DD /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				E9B35E29256F5215005319DD /* Base */,
+				E9B35E07256F5215005319DD /* Bilibili */,
+				E9B35E13256F5215005319DD /* Comment */,
+				E9B35E1C256F5215005319DD /* Components */,
+				E9B35E24256F5215005319DD /* Custom */,
+				E9B35E1F256F5215005319DD /* Distribute */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		E9B35E07256F5215005319DD /* Bilibili */ = {
+			isa = PBXGroup;
+			children = (
+				E9B35E08256F5215005319DD /* Controller */,
+				E9B35E0F256F5215005319DD /* View */,
+			);
+			path = Bilibili;
+			sourceTree = "<group>";
+		};
+		E9B35E08256F5215005319DD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E9B35E0D256F5215005319DD /* BilibiliSceneController.h */,
+				E9B35E09256F5215005319DD /* BilibiliSceneController.m */,
+				E9B35E0B256F5215005319DD /* BilibiliSceneController.xib */,
+				E9B35E0E256F5215005319DD /* WebViewController.h */,
+				E9B35E0A256F5215005319DD /* WebViewController.m */,
+				E9B35E0C256F5215005319DD /* WebViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E9B35E0F256F5215005319DD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E9B35E10256F5215005319DD /* BilibiliCommentCell.h */,
+				E9B35E12256F5215005319DD /* BilibiliCommentCell.m */,
+				E9B35E11256F5215005319DD /* BilibiliCommentCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E9B35E13256F5215005319DD /* Comment */ = {
+			isa = PBXGroup;
+			children = (
+				E9B35E14256F5215005319DD /* Controller */,
+				E9B35E18256F5215005319DD /* View */,
+			);
+			path = Comment;
+			sourceTree = "<group>";
+		};
+		E9B35E14256F5215005319DD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E9B35E16256F5215005319DD /* CommentSceneController.h */,
+				E9B35E17256F5215005319DD /* CommentSceneController.m */,
+				E9B35E15256F5215005319DD /* CommentSceneController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E9B35E18256F5215005319DD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E9B35E1A256F5215005319DD /* DistributeCommentCell.h */,
+				E9B35E19256F5215005319DD /* DistributeCommentCell.m */,
+				E9B35E1B256F5215005319DD /* DistributeCommentCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E9B35E1C256F5215005319DD /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				E9B35E1D256F5215005319DD /* GTProgressHUD.h */,
+				E9B35E1E256F5215005319DD /* GTProgressHUD.m */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		E9B35E1F256F5215005319DD /* Distribute */ = {
+			isa = PBXGroup;
+			children = (
+				E9B35E20256F5215005319DD /* Controller */,
+			);
+			path = Distribute;
+			sourceTree = "<group>";
+		};
+		E9B35E20256F5215005319DD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E9B35E23256F5215005319DD /* DistributeSceneController.h */,
+				E9B35E21256F5215005319DD /* DistributeSceneController.m */,
+				E9B35E22256F5215005319DD /* DistributeSceneController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E9B35E24256F5215005319DD /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				E9B35E25256F5215005319DD /* Controller */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		E9B35E25256F5215005319DD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E9B35E28256F5215005319DD /* CustomSceneController.h */,
+				E9B35E27256F5215005319DD /* CustomSceneController.m */,
+				E9B35E26256F5215005319DD /* CustomSceneController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E9B35E29256F5215005319DD /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				E9B35E2A256F5215005319DD /* Controller */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		E9B35E2A256F5215005319DD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E9B35E2C256F5215005319DD /* BaseViewController.h */,
+				E9B35E2B256F5215005319DD /* BaseViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E9B35E4C256F52C0005319DD /* ThirdLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				E9B35E4D256F52C0005319DD /* Masonry */,
+				E9B35E67256F52C0005319DD /* MBProgressHUD */,
+			);
+			path = ThirdLibrary;
+			sourceTree = "<group>";
+		};
+		E9B35E4D256F52C0005319DD /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				E9B35E4E256F52C0005319DD /* MASCompositeConstraint.h */,
+				E9B35E5C256F52C0005319DD /* MASCompositeConstraint.m */,
+				E9B35E5A256F52C0005319DD /* MASConstraint.h */,
+				E9B35E63256F52C0005319DD /* MASConstraint.m */,
+				E9B35E50256F52C0005319DD /* MASConstraint+Private.h */,
+				E9B35E53256F52C0005319DD /* MASConstraintMaker.h */,
+				E9B35E5D256F52C0005319DD /* MASConstraintMaker.m */,
+				E9B35E51256F52C0005319DD /* MASLayoutConstraint.h */,
+				E9B35E5E256F52C0005319DD /* MASLayoutConstraint.m */,
+				E9B35E62256F52C0005319DD /* Masonry.h */,
+				E9B35E56256F52C0005319DD /* MASUtilities.h */,
+				E9B35E57256F52C0005319DD /* MASViewAttribute.h */,
+				E9B35E66256F52C0005319DD /* MASViewAttribute.m */,
+				E9B35E59256F52C0005319DD /* MASViewConstraint.h */,
+				E9B35E65256F52C0005319DD /* MASViewConstraint.m */,
+				E9B35E55256F52C0005319DD /* NSArray+MASAdditions.h */,
+				E9B35E5F256F52C0005319DD /* NSArray+MASAdditions.m */,
+				E9B35E52256F52C0005319DD /* NSArray+MASShorthandAdditions.h */,
+				E9B35E5B256F52C0005319DD /* NSLayoutConstraint+MASDebugAdditions.h */,
+				E9B35E4F256F52C0005319DD /* NSLayoutConstraint+MASDebugAdditions.m */,
+				E9B35E54256F52C0005319DD /* View+MASAdditions.h */,
+				E9B35E60256F52C0005319DD /* View+MASAdditions.m */,
+				E9B35E61256F52C0005319DD /* View+MASShorthandAdditions.h */,
+				E9B35E64256F52C0005319DD /* ViewController+MASAdditions.h */,
+				E9B35E58256F52C0005319DD /* ViewController+MASAdditions.m */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+		E9B35E67256F52C0005319DD /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				E9B35E69256F52C0005319DD /* MBProgressHUD.h */,
+				E9B35E68256F52C0005319DD /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		E9E94B9224F7557C001768F5 = {
+			isa = PBXGroup;
+			children = (
+				E9B35DEE256F5215005319DD /* GeeGlance */,
+				E9E94B9C24F7557C001768F5 /* Products */,
+				6F299648E06D13A6E3762A4B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E9E94B9C24F7557C001768F5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E9E94B9B24F7557C001768F5 /* 先鉴.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E9E94B9A24F7557C001768F5 /* GeeGlanceDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9E94BB424F7557F001768F5 /* Build configuration list for PBXNativeTarget "GeeGlanceDemo" */;
+			buildPhases = (
+				E9E94B9724F7557C001768F5 /* Sources */,
+				E9E94B9824F7557C001768F5 /* Frameworks */,
+				E9E94B9924F7557C001768F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GeeGlanceDemo;
+			productName = Themis;
+			productReference = E9E94B9B24F7557C001768F5 /* 先鉴.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E9E94B9324F7557C001768F5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = com.geetest;
+				TargetAttributes = {
+					E9E94B9A24F7557C001768F5 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+				};
+			};
+			buildConfigurationList = E9E94B9624F7557C001768F5 /* Build configuration list for PBXProject "GeeGlanceDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E9E94B9224F7557C001768F5;
+			productRefGroup = E9E94B9C24F7557C001768F5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E9E94B9A24F7557C001768F5 /* GeeGlanceDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E9E94B9924F7557C001768F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9B35E77256F5306005319DD /* GeeGlanceResource.bundle in Resources */,
+				E9B35E41256F5215005319DD /* CommentSceneController.xib in Resources */,
+				E9B35E44256F5215005319DD /* DistributeCommentCell.xib in Resources */,
+				E9B35E3F256F5215005319DD /* BilibiliCommentCell.xib in Resources */,
+				E9B35E36256F5215005319DD /* LaunchScreen.storyboard in Resources */,
+				E9B35E3D256F5215005319DD /* BilibiliSceneController.xib in Resources */,
+				E9B35E47256F5215005319DD /* DistributeSceneController.xib in Resources */,
+				E9B35E33256F5215005319DD /* Assets.xcassets in Resources */,
+				E9B35E48256F5215005319DD /* CustomSceneController.xib in Resources */,
+				E9B35E3E256F5215005319DD /* WebViewController.xib in Resources */,
+				E9B35E37256F5215005319DD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E9E94B9724F7557C001768F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9B35E30256F5215005319DD /* GlanceSubmitConfirmWindow.m in Sources */,
+				E9B35E34256F5215005319DD /* ViewController.m in Sources */,
+				E9B35E40256F5215005319DD /* BilibiliCommentCell.m in Sources */,
+				E9B35E43256F5215005319DD /* DistributeCommentCell.m in Sources */,
+				E9B35E6C256F52C0005319DD /* MASCompositeConstraint.m in Sources */,
+				E9B35E42256F5215005319DD /* CommentSceneController.m in Sources */,
+				E9B35E71256F52C0005319DD /* MASConstraint.m in Sources */,
+				E9B35E70256F52C0005319DD /* View+MASAdditions.m in Sources */,
+				E9B35E35256F5215005319DD /* ColorUtil.m in Sources */,
+				E9B35E74256F52C0005319DD /* MBProgressHUD.m in Sources */,
+				E9B35E46256F5215005319DD /* DistributeSceneController.m in Sources */,
+				E9B35E73256F52C0005319DD /* MASViewAttribute.m in Sources */,
+				E9B35E6A256F52C0005319DD /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				E9B35E3C256F5215005319DD /* WebViewController.m in Sources */,
+				E9B35E4A256F5215005319DD /* BaseViewController.m in Sources */,
+				E9B35E38256F5215005319DD /* main.m in Sources */,
+				E9B35E6E256F52C0005319DD /* MASLayoutConstraint.m in Sources */,
+				E9B35E72256F52C0005319DD /* MASViewConstraint.m in Sources */,
+				E9B35E49256F5215005319DD /* CustomSceneController.m in Sources */,
+				E9B35E6F256F52C0005319DD /* NSArray+MASAdditions.m in Sources */,
+				E9B35E2F256F5215005319DD /* GlanceButton.m in Sources */,
+				E9B35E6D256F52C0005319DD /* MASConstraintMaker.m in Sources */,
+				E9B35E3B256F5215005319DD /* BilibiliSceneController.m in Sources */,
+				E9B35E3A256F5215005319DD /* AppDelegate.m in Sources */,
+				E9B35E6B256F52C0005319DD /* ViewController+MASAdditions.m in Sources */,
+				E9B35E45256F5215005319DD /* GTProgressHUD.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E9B35DFE256F5215005319DD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E9B35DFF256F5215005319DD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E9B35E00256F5215005319DD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E9B35E01256F5215005319DD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E9E94BB224F7557F001768F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E9E94BB324F7557F001768F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E9E94BB524F7557F001768F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.0;
+				DEVELOPMENT_TEAM = 2448B7W898;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/../SDK",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = (
+					HAVE_PKCRYPT,
+					HAVE_INTTYPES_H,
+					HAVE_WZAES,
+					HAVE_STDINT_H,
+					HAVE_ZLIB,
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/GeeGlance/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.geetest.glancedemo;
+				PRODUCT_NAME = "先鉴";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		E9E94BB624F7557F001768F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.0;
+				DEVELOPMENT_TEAM = 2448B7W898;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/../SDK",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = (
+					HAVE_PKCRYPT,
+					HAVE_INTTYPES_H,
+					HAVE_WZAES,
+					HAVE_STDINT_H,
+					HAVE_ZLIB,
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/GeeGlance/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.geetest.glancedemo;
+				PRODUCT_NAME = "先鉴";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E9E94B9624F7557C001768F5 /* Build configuration list for PBXProject "GeeGlanceDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9E94BB224F7557F001768F5 /* Debug */,
+				E9E94BB324F7557F001768F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9E94BB424F7557F001768F5 /* Build configuration list for PBXNativeTarget "GeeGlanceDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9E94BB524F7557F001768F5 /* Debug */,
+				E9E94BB624F7557F001768F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E9E94B9324F7557C001768F5 /* Project object */;
+}
