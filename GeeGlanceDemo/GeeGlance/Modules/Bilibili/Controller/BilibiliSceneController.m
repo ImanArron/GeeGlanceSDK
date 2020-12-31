@@ -339,6 +339,7 @@ static CGFloat const MAXInputCharactors = 100;
         _editTextView.textContainerInset = UIEdgeInsetsMake(-2, 0, 0, 0);
         _editTextView.sceneKey = @"Bilibili";
         _editTextView.sceneType = GeeGlanceSceneTypeShort;
+        // 自定义敏感字符标记颜色
         _editTextView.markBackgroundColor = [UIColor colorWithRed:0 green:1 blue:0 alpha:0.16];
         _editTextView.markUnderlineColor = [UIColor colorWithRed:0 green:1 blue:0 alpha:0.64];
     }

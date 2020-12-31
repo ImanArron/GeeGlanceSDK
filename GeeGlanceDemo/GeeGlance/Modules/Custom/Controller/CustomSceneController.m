@@ -69,8 +69,8 @@
             sceneType = [typeString integerValue];
         }
         GeeGlanceConfig *config = [[GeeGlanceConfig alloc] initWithSceneKey:sceneKey sceneType:sceneType];
-        [GeeGlanceManager matchesInContent:self.editTextView.text withConfig:config completionHandler:^(NSMutableArray<GeeGlanceMatchResult *> * _Nonnull results, NSString * _Nonnull originContent, GeeGlanceExtraInfo * _Nonnull extraInfo) {
-            [wself finishMatching:results originContent:originContent extraInfo:extraInfo];
+        [GeeGlanceManager matchesInContent:self.editTextView.text withConfig:config completionHandler:^(GeeGlanceMatchingResult * _Nonnull result) {
+            [wself finishMatching:result.results originContent:result.originContent extraInfo:result.extraInfo];
         }];
     } else {
         [GTProgressHUD showToastWithMessage:@"请输入要识别的内容"];

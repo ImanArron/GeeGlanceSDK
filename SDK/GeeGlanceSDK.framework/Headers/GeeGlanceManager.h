@@ -8,9 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "GeeGlanceMatchResult.h"
-#import "GeeGlanceExtraInfo.h"
 #import "GeeGlanceConfig.h"
+#import "GeeGlanceMatchingResult.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -79,7 +78,7 @@ NS_ASSUME_NONNULL_BEGIN
              extraInfo - 额外信息，包括传入的 merchantId、匹配任务的 taskId、sdk、应用、系统等版本号、机型，匹配出错时，error 中有具体错误描述信息
  */
 + (void)matchesInContent:(NSString * _Nullable)content
-       completionHandler:(void(^)(NSMutableArray<GeeGlanceMatchResult *> *results, NSString *originContent, GeeGlanceExtraInfo *extraInfo))completionHandler;
+       completionHandler:(void(^)(GeeGlanceMatchingResult * _Nonnull result))completionHandler;
 
 /**
  @abstract 匹配字符串中的敏感词
@@ -95,7 +94,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (void)matchesInContent:(NSString * _Nullable)content
               withConfig:(GeeGlanceConfig * _Nullable)config
-       completionHandler:(void(^)(NSMutableArray<GeeGlanceMatchResult *> *results, NSString *originContent, GeeGlanceExtraInfo *extraInfo))completionHandler;
+       completionHandler:(void(^)(GeeGlanceMatchingResult * _Nonnull result))completionHandler;
 
 // MARK: SDK Version
 
